@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.movieList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.movieCard {
+  background-color: rgb(235, 235, 235);
+  flex: 0 0 300px;
+}
