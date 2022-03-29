@@ -1,0 +1,26 @@
+@use '../../assets/scss/variables.module' as *;
+
+.content {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  span {
+    font-weight: 600;
+  }
+  button {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: $secondary;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    outline: none;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    &:hover {
+      color: $accent;
+    }
+  }
+}

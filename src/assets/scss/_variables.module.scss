@@ -1,0 +1,24 @@
+// colors
+$primary: rgb(31, 31, 31);
+$secondary: rgb(251, 251, 251);
+$accent: rgb(132, 132, 255);
+//breakpoints
+$desktop: 1124px;
+$tablet: 825px;
+$mobile: 600px;
+
+//typography
+
+$font-normal: 18px;
+$font-normal-sm: 16px;
+
+//content
+$side-paddings: 15px;
+
+@mixin content-max-width {
+  width: 100%;
+  max-width: $desktop;
+  margin: 0 auto;
+  padding-left: $side-paddings;
+  padding-right: $side-paddings;
+}

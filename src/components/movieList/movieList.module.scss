@@ -1,0 +1,43 @@
+@use '../../assets/scss/variables.module' as *;
+
+.movieList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.card {
+  transition-duration: 150ms;
+  text-decoration: none;
+  background-color: $primary;
+  img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+  h2 {
+    padding: 10px;
+    color: $secondary;
+    font-size: $font-normal-sm;
+  }
+  &:hover {
+    background-color: $accent;
+  }
+}
+
+@media screen and(max-width:$desktop) {
+  .movieList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and(max-width:$mobile) {
+  .movieList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card {
+    img {
+      height: 250px;
+    }
+  }
+}

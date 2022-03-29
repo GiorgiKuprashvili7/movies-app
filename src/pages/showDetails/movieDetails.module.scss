@@ -1,0 +1,59 @@
+@use '../../assets/scss/variables.module' as *;
+
+.backToHomePage {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  color: $primary;
+  text-decoration: none;
+  padding: 20px 0 30px 0;
+}
+
+.loading {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+.gridContainer {
+  padding-bottom: 100px;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+}
+.dataContainer {
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 25px;
+    .star {
+      color: rgb(211, 197, 3);
+    }
+  }
+  .title {
+    max-width: 30ch;
+    margin-bottom: 5px;
+  }
+  .plot {
+    max-width: 50ch;
+    margin-bottom: 20px;
+    font-size: $font-normal;
+  }
+  .details {
+    p {
+      color: $accent;
+      margin-bottom: 5px;
+      span {
+        color: $primary;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+@media screen and(max-width:$mobile) {
+  .gridContainer {
+    grid-template-columns: 1fr;
+  }
+}
